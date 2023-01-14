@@ -18,22 +18,23 @@ public class NegativeTests {
     }
 
     @Test
-    public void shouldNotAllowToCreateUserWithInvalidEmail(){
+    public void shouldNotAllowToCreateUserWithUsedEmail(){
 
         //1.Arrange
-        String firstName = "Vinutha";
+        /*String firstName = "Vinutha";
         String lastName = "Mahadev";
         String email = "fdf@gmail.com";
 
-        CreateUserRequestBody requestBody = new CreateUserRequestBody(firstName,lastName,email);
+       // CreateUserRequestBody requestBody = new CreateUserRequestBody(firstName,lastName,email);
+        CreateUserRequestBody requestBody = CreateUserRequestBody.builder().email(email).firstName(firstName)
+                .lastName(lastName).build();*/
+        CreateUserRequestBody requestBody = new CreateUserRequestBody.Builder().email("fdf@gmail.com").build();
 
         //2.Act
         CreateUserErrorResponse errorResponse = usersService.createUserExpectingError(requestBody);
 
         //3.Assert
         errorResponse.assertUser(400);
-
-
 
     }
 }
