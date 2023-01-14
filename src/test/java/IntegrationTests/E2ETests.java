@@ -1,3 +1,5 @@
+package IntegrationTests;
+
 import Users.Create.CreatePostRequestBody;
 import Users.UserClient;
 import Users.UsersService;
@@ -7,8 +9,7 @@ import org.testng.annotations.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CreateAndGetPost {
-
+public class E2ETests {
     UsersService usersService;
 
     @BeforeClass
@@ -32,8 +33,10 @@ public class CreateAndGetPost {
         //2.Act
         String id = usersService.createPost(requestBody).getId();
 
-        //3.Assert
-        usersService.getPostById(id).assertPost(requestBody);
+        //3. Assert
+        usersService.deletePostByID(id).assertPostDelete(id);
+
+        usersService.getDeletePost(id).assertDeletePost(404,"RESOURCE_NOT_FOUND");
 
 
     }

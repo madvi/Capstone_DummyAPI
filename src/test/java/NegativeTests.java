@@ -1,6 +1,7 @@
 import Users.Create.CreateUserRequestBody;
 import Users.Create.Response.CreateUserErrorResponse;
 import Users.UserClient;
+import Users.UsersService;
 import org.hamcrest.Matchers;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -9,26 +10,29 @@ import org.testng.annotations.Test;
 import java.util.UUID;
 
 public class NegativeTests {
-    UserClient userClient;
+    UsersService usersService;
 
     @BeforeClass
     public void beforeClass() {
-        userClient = new UserClient();
+        usersService = new UsersService();
     }
 
     @Test
     public void shouldNotAllowToCreateUserWithInvalidEmail(){
 
+        //1.Arrange
         String firstName = "Vinutha";
         String lastName = "Mahadev";
         String email = "fdf@gmail.com";
 
         CreateUserRequestBody requestBody = new CreateUserRequestBody(firstName,lastName,email);
 
-        CreateUserErrorResponse errorResponse = userClient.createUserExpectingError(requestBody);
-        Assert.assertEquals(errorResponse.getStatusCode(),400);
-        Assert.assertEquals(errorResponse.getError(),"BODY_NOT_VALID");
-        Assert.assertEquals(errorResponse.getData().getEmail(),"Email already used");
+        //2.Act
+        CreateUserErrorResponse errorResponse = usersService.createUserExpectingError(requestBody);
+
+        //3.Assert
+        errorResponse.assertUser(400);
+
 
 
     }

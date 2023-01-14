@@ -3,6 +3,7 @@ package Users.Create.Response;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 import lombok.Setter;
+import org.testng.Assert;
 
 import java.util.Map;
 
@@ -18,6 +19,12 @@ public class CreateUserErrorResponse {
 
    @JsonProperty("data")
     private Data data;
+
+    public void assertUser(int expectedStatusCode) {
+        Assert.assertEquals(this.getStatusCode(),expectedStatusCode);
+        Assert.assertEquals(this.getError(),"BODY_NOT_VALID");
+        Assert.assertEquals(this.getData().getEmail(),"Email already used");
+    }
 
     @Getter
     public static class Data {

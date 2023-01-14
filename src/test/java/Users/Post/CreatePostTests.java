@@ -3,6 +3,7 @@ package Users.Post;
 import Users.Create.CreatePostRequestBody;
 import Users.Create.Response.CreatePostResponse;
 import Users.UserClient;
+import Users.UsersService;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -11,16 +12,17 @@ import java.util.List;
 
 
 public class CreatePostTests {
-    UserClient userClient;
+    UsersService usersService;
 
     @BeforeClass
     public void beforeClass() {
-        userClient = new UserClient();
+        usersService = new UsersService();
     }
 
     @Test
     public void shouldCreatePost(){
 
+        //1.Arrange
         String owner = "63be862670aabb0ba84cf7a3";
         String image = "https://i.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI";
         String text =  "A beauty of a mountain";
@@ -31,7 +33,10 @@ public class CreatePostTests {
 
         CreatePostRequestBody requestBody = new CreatePostRequestBody(owner,image,text,tags);
 
-        CreatePostResponse createPostResponse = userClient.createPost(requestBody);
+        //2.Act
+        CreatePostResponse createPostResponse = usersService.createPost(requestBody);
+
+        //3.Assert
         createPostResponse.assertPost(requestBody);
 
 

@@ -1,4 +1,4 @@
-package Users.GetAllByAccount;
+package Users.Get;
 
 import lombok.Getter;
 import lombok.Setter;

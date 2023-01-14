@@ -2,6 +2,7 @@ package Users.Post.GetPost;
 
 import Users.Create.CreatePostRequestBody;
 import Users.Create.CreateUserRequestBody;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 import lombok.Setter;
 import org.testng.Assert;
@@ -23,6 +24,7 @@ public class GetPostResponse {
     private String text;
     private String updatedDate;
     private String likes;
+
     private List<String> tags;
 
     public void assertPost(CreatePostRequestBody requestBody) {
@@ -31,6 +33,8 @@ public class GetPostResponse {
         Assert.assertEquals(tags,requestBody.getTags());
         Assert.assertEquals(text,requestBody.getText());
     }
+
+
 
     @Getter
     public static class Owner {
