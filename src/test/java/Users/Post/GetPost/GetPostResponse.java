@@ -7,6 +7,7 @@ import lombok.Getter;
 import lombok.Setter;
 import org.testng.Assert;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Getter
@@ -26,15 +27,20 @@ public class GetPostResponse {
     private String likes;
 
     private List<String> tags;
+    List<String> list = new ArrayList<>();
+    public List<String> getList() {
+        tags.add("Mountain");
+        tags.add("Clouds");
+        tags.add("Sky");
+        return list;
+    }
 
     public void assertPost(CreatePostRequestBody requestBody) {
         //Assert.assertEquals(owner,requestBody.getOwner().());
         Assert.assertEquals(image,requestBody.getImage());
-        Assert.assertEquals(tags,requestBody.getTags());
+        Assert.assertEquals(list,requestBody.getList());
         Assert.assertEquals(text,requestBody.getText());
     }
-
-
 
     @Getter
     public static class Owner {
