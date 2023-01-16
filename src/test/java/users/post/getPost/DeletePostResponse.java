@@ -1,4 +1,4 @@
-package Users.Post.GetPost;
+package users.post.getPost;
 
 import lombok.Getter;
 import lombok.Setter;

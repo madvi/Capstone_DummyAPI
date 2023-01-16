@@ -1,13 +1,10 @@
-package Users.Post.GetPost;
+package users.post.getPost;
 
-import Users.Create.CreatePostRequestBody;
-import Users.Create.CreateUserRequestBody;
-import com.fasterxml.jackson.annotation.JsonProperty;
+import users.create.CreatePostRequestBody;
 import lombok.Getter;
 import lombok.Setter;
 import org.testng.Assert;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Getter
@@ -25,20 +22,12 @@ public class GetPostResponse {
     private String text;
     private String updatedDate;
     private String likes;
-
     private List<String> tags;
-    List<String> list = new ArrayList<>();
-    public List<String> getList() {
-        tags.add("Mountain");
-        tags.add("Clouds");
-        tags.add("Sky");
-        return list;
-    }
 
     public void assertPost(CreatePostRequestBody requestBody) {
         //Assert.assertEquals(owner,requestBody.getOwner().());
         Assert.assertEquals(image,requestBody.getImage());
-        Assert.assertEquals(list,requestBody.getList());
+        Assert.assertEquals(tags,requestBody.getTags());
         Assert.assertEquals(text,requestBody.getText());
     }
 

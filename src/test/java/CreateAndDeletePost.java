@@ -1,14 +1,7 @@
-import Users.Create.CreatePostRequestBody;
-import Users.Create.CreateUserRequestBody;
-import Users.UserClient;
-import Users.UsersService;
-import org.testng.Assert;
+import users.create.CreatePostRequestBody;
+import users.UsersService;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
-import java.util.ArrayList;
-import java.util.List;
-
 
 
 public class CreateAndDeletePost {

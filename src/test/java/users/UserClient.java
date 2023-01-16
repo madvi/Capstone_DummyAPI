@@ -1,7 +1,7 @@
-package Users;
+package users;
 
-import Users.Create.CreatePostRequestBody;
-import Users.Create.CreateUserRequestBody;
+import users.create.CreatePostRequestBody;
+import users.create.CreateUserRequestBody;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import static io.restassured.RestAssured.given;

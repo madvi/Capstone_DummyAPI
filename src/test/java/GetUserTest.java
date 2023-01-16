@@ -1,8 +1,6 @@
-import Users.Get.GetAllUserResponseByMyAccount;
-import Users.Get.GetAllUsers;
-import Users.UserClient;
-import Users.UsersService;
-import org.hamcrest.Matchers;
+import users.get.GetAllUserResponseByMyAccount;
+import users.get.GetAllUsers;
+import users.UsersService;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;

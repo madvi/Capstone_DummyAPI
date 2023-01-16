@@ -1,6 +1,6 @@
-package Users.Create.Response;
+package users.create.response;
 
-import Users.Create.CreatePostRequestBody;
+import users.create.CreatePostRequestBody;
 import lombok.Getter;
 import lombok.Setter;
 import org.testng.Assert;

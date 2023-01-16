@@ -1,13 +1,8 @@
-import Users.Create.CreateUserRequestBody;
-import Users.Create.Response.CreateUserErrorResponse;
-import Users.UserClient;
-import Users.UsersService;
-import org.hamcrest.Matchers;
-import org.testng.Assert;
+import users.create.CreateUserRequestBody;
+import users.create.response.CreateUserErrorResponse;
+import users.UsersService;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
-import java.util.UUID;
 
 public class NegativeTests {
     UsersService usersService;

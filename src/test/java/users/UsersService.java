@@ -1,15 +1,15 @@
-package Users;
+package users;
 
-import Users.Create.CreatePostRequestBody;
-import Users.Create.CreateUserRequestBody;
-import Users.Create.Response.CreatePostResponse;
-import Users.Create.Response.CreateUserErrorResponse;
-import Users.Create.Response.CreateUserResponse;
-import Users.Create.Response.GetDeletedPostResponse;
-import Users.Get.GetAllUserResponseByMyAccount;
-import Users.Get.GetAllUsers;
-import Users.Post.GetPost.DeletePostResponse;
-import Users.Post.GetPost.GetPostResponse;
+import users.create.CreatePostRequestBody;
+import users.create.CreateUserRequestBody;
+import users.create.response.CreatePostResponse;
+import users.create.response.CreateUserErrorResponse;
+import users.create.response.CreateUserResponse;
+import users.create.response.GetDeletedPostResponse;
+import users.get.GetAllUserResponseByMyAccount;
+import users.get.GetAllUsers;
+import users.post.getPost.DeletePostResponse;
+import users.post.getPost.GetPostResponse;
 import io.restassured.response.Response;
 
 public class UsersService {

@@ -1,10 +1,10 @@
-package Users.Get;
+package users.get;
 
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
-public class GetAllUserResponseByMyAccount {
+public class GetAllUsers {
 
     @Setter
     private int statusCode;
@@ -19,5 +19,8 @@ public class GetAllUserResponseByMyAccount {
         private String firstName;
         private String lastName;
         private String id;
+        private String title;
+        private String picture;
+
     }
 }

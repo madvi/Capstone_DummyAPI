@@ -1,11 +1,7 @@
-import Users.Create.CreatePostRequestBody;
-import Users.UserClient;
-import Users.UsersService;
+import users.create.CreatePostRequestBody;
+import users.UsersService;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class CreateAndGetPost {
 

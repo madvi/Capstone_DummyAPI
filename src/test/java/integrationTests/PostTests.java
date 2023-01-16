@@ -1,15 +1,11 @@
-package IntegrationTests;
+package integrationTests;
 
-import Users.Create.CreatePostRequestBody;
-import Users.UserClient;
-import Users.UsersService;
+import users.create.CreatePostRequestBody;
+import users.UsersService;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class E2ETests {
+public class PostTests {
     UsersService usersService;
 
     @BeforeClass
@@ -17,7 +13,7 @@ public class E2ETests {
         usersService = new UsersService();
     }
     @Test
-    public void shouldCreatePostAndGetPostById(){
+    public void userShouldBeAbleToDeleteTheCreatedPostById(){
 
         //1.Arrange
         CreatePostRequestBody requestBody = new CreatePostRequestBody.Builder().build();

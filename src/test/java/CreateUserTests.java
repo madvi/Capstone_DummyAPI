@@ -1,12 +1,9 @@
 
-import Users.Create.CreatePostRequestBody;
-import Users.Create.CreateUserRequestBody;
-import Users.Create.Response.CreateUserResponse;
-import Users.UserClient;
-import Users.UsersService;
+import users.create.CreateUserRequestBody;
+import users.create.response.CreateUserResponse;
+import users.UsersService;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import java.util.UUID;
 
 public class CreateUserTests {
     UsersService usersService;
