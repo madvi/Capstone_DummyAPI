@@ -1,5 +1,6 @@
 package users;
 
+import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import users.create.CreatePostRequestBody;
@@ -12,7 +13,9 @@ public class BlogClient {
                 .header("app-id", "63849396d9cf2f44805f4cd2")
                 .contentType(ContentType.JSON)
                 .body(body)
+                //filter(new AllureRestAssured())
                 .when()
+                .filter(new AllureRestAssured())
                 .post("https://dummyapi.io/data/v1/post/create");
 
         response.then()
@@ -25,6 +28,7 @@ public class BlogClient {
                 .header("app-id", "63849396d9cf2f44805f4cd2")
                 .pathParam("id", id)
                 .when()
+                .filter(new AllureRestAssured())
                 .get("https://dummyapi.io/data/v1/post/{id}");
         response.then()
                 .log().body();
@@ -36,6 +40,7 @@ public class BlogClient {
                 .header("app-id", "63849396d9cf2f44805f4cd2")
                 .pathParam("id", id)
                 .when()
+                .filter(new AllureRestAssured())
                 .delete("https://dummyapi.io/data/v1/post/{id}");
         response.then()
                 .log().body();
@@ -47,6 +52,7 @@ public class BlogClient {
                 .header("app-id", "63849396d9cf2f44805f4cd2")
                 .pathParam("id", id)
                 .when()
+                .filter(new AllureRestAssured())
                 .delete("https://dummyapi.io/data/v1/post/{id}");
         response.then()
                 .log().body();

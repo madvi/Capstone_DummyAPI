@@ -11,6 +11,6 @@
         <module name="Capastone_DummyAPI.test" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="11" />
+    <bytecodeTargetLevel target="13" />
   </component>
 </project>

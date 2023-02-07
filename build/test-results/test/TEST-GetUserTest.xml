@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="GetUserTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-02-07T05:14:00" hostname="Vs-MacBook-Pro.local" time="1.111">
+<testsuite name="GetUserTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-02-07T05:49:01" hostname="Vs-MacBook-Pro.local" time="1.258">
   <properties/>
-  <testcase name="shouldGetUsers" classname="GetUserTest" time="0.512"/>
-  <testcase name="shouldGetUsersCreatedByYourAccount" classname="GetUserTest" time="0.596"/>
+  <testcase name="shouldGetUsers" classname="GetUserTest" time="0.588"/>
+  <testcase name="shouldGetUsersCreatedByYourAccount" classname="GetUserTest" time="0.667"/>
   <system-out><![CDATA[{
     "data": [
         {
@@ -146,7 +146,7 @@
             "picture": "https://randomuser.me/api/portraits/med/men/31.jpg"
         }
     ],
-    "total": 162,
+    "total": 169,
     "page": 0,
     "limit": 20
 }
@@ -253,7 +253,7 @@
             "lastName": "Andersen"
         }
     ],
-    "total": 63,
+    "total": 70,
     "page": 0,
     "limit": 20
 }

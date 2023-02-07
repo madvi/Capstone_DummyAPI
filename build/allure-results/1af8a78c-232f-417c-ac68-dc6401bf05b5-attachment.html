@@ -1,0 +1,39 @@
+<div>POST to https://dummyapi.io/data/v1/post/create</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+{
+    &quot;owner&quot;: &quot;63be862670aabb0ba84cf7a3&quot;,
+    &quot;image&quot;: &quot;https://i.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI&quot;,
+    &quot;text&quot;: &quot;A beauty of a mountain&quot;,
+    &quot;tags&quot;: [
+        &quot;Mountain&quot;,
+        &quot;Clouds&quot;,
+        &quot;Sky&quot;
+    ]
+}    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>app-id: 63849396d9cf2f44805f4cd2</div>
+        <div>Accept: */*</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;https://dummyapi.io/data/v1/post/create&#39; -H &#39;app-id: 63849396d9cf2f44805f4cd2&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;owner&quot;: &quot;63be862670aabb0ba84cf7a3&quot;,
+    &quot;image&quot;: &quot;https://i.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI&quot;,
+    &quot;text&quot;: &quot;A beauty of a mountain&quot;,
+    &quot;tags&quot;: [
+        &quot;Mountain&quot;,
+        &quot;Clouds&quot;,
+        &quot;Sky&quot;
+    ]
+}&#39;
+</div>

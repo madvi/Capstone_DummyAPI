@@ -23,15 +23,9 @@ dependencies {
     implementation group: 'io.qameta.allure', name: 'allure-testng', version: '2.20.1'
     // https://mvnrepository.com/artifact/io.qameta.allure/allure-rest-assured
     implementation group: 'io.qameta.allure', name: 'allure-rest-assured', version: '2.20.1'
-    implementation 'org.snakeyaml:snakeyaml-engine:2.4'
 
 }
 
 test {
     useTestNG()
-}
-java {
-    modularity.inferModulePath = true
-    toolchain { languageVersion.set(JavaLanguageVersion.of(11)) }
-
 }

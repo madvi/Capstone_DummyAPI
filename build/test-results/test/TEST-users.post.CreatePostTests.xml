@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="users.post.CreatePostTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-07T05:14:08" hostname="Vs-MacBook-Pro.local" time="0.509">
+<testsuite name="users.post.CreatePostTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-07T05:49:09" hostname="Vs-MacBook-Pro.local" time="0.576">
   <properties/>
-  <testcase name="shouldCreatePost" classname="users.post.CreatePostTests" time="0.509"/>
+  <testcase name="shouldCreatePost" classname="users.post.CreatePostTests" time="0.576"/>
   <system-out><![CDATA[{
-    "id": "63e1de210386ff4f57e1fb40",
+    "id": "63e1e6553425cf20ee90d9b9",
     "image": "https://i.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI",
     "likes": 0,
     "link": "",
@@ -13,8 +13,8 @@
         "Sky"
     ],
     "text": "A beauty of a mountain",
-    "publishDate": "2023-02-07T05:14:09.128Z",
-    "updatedDate": "2023-02-07T05:14:09.128Z",
+    "publishDate": "2023-02-07T05:49:09.726Z",
+    "updatedDate": "2023-02-07T05:49:09.726Z",
     "owner": {
         "id": "63be862670aabb0ba84cf7a3",
         "firstName": "Vinutha",

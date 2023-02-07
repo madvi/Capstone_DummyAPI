@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CreateUserTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-07T05:13:57" hostname="Vs-MacBook-Pro.local" time="3.13">
+<testsuite name="CreateUserTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-07T05:48:58" hostname="Vs-MacBook-Pro.local" time="2.274">
   <properties/>
-  <testcase name="shouldCreateUser" classname="CreateUserTests" time="3.13"/>
+  <testcase name="shouldCreateUser" classname="CreateUserTests" time="2.274"/>
   <system-out><![CDATA[{
-    "id": "63e1de180386ff4c66e1fafc",
+    "id": "63e1e64d3425cf645a90d974",
     "firstName": "Vinutha",
     "lastName": "Mahadev",
-    "email": "06404285-d20e-45c6-99be-c7b143dabf99@gmail.com",
-    "registerDate": "2023-02-07T05:14:00.756Z",
-    "updatedDate": "2023-02-07T05:14:00.756Z"
+    "email": "3c8f868c-57ef-4575-9c8b-575361b58bab@gmail.com",
+    "registerDate": "2023-02-07T05:49:01.022Z",
+    "updatedDate": "2023-02-07T05:49:01.022Z"
 }
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

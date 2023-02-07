@@ -13,7 +13,8 @@ public class UserClient {
     private RequestSpecification metaData() {
         return given()
                 .header("app-id", "63849396d9cf2f44805f4cd2")
-                .contentType(ContentType.JSON);
+                .contentType(ContentType.JSON)
+                .filter(new AllureRestAssured());
     }
 
     public Response create(CreateUserRequestBody body) {

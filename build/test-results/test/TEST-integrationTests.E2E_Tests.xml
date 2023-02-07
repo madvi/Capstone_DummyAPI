@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="integrationTests.E2E_Tests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-07T05:14:03" hostname="Vs-MacBook-Pro.local" time="3.059">
+<testsuite name="integrationTests.E2E_Tests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-07T05:49:03" hostname="Vs-MacBook-Pro.local" time="3.452">
   <properties/>
-  <testcase name="endToEndTests" classname="integrationTests.E2E_Tests" time="3.059"/>
+  <testcase name="endToEndTests" classname="integrationTests.E2E_Tests" time="3.452"/>
   <system-out><![CDATA[{
-    "id": "63e1de1b0386ff84f0e1fb0f",
+    "id": "63e1e6503425cff7d990d987",
     "firstName": "Vinutha",
     "lastName": "Mahadev",
-    "email": "9f627ad2-3ab8-476c-ba4c-0e875a17c2a2@gmail.com",
-    "registerDate": "2023-02-07T05:14:03.943Z",
-    "updatedDate": "2023-02-07T05:14:03.943Z"
+    "email": "257ef4bd-5838-4717-a104-4e8db6c8aee7@gmail.com",
+    "registerDate": "2023-02-07T05:49:04.121Z",
+    "updatedDate": "2023-02-07T05:49:04.121Z"
 }
 {
-    "id": "63e1de1c0386ff6c06e1fb15",
+    "id": "63e1e6503425cf785290d98d",
     "image": "https://i.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI",
     "likes": 0,
     "link": "",
@@ -21,22 +21,22 @@
         "Sky"
     ],
     "text": "A beauty of a mountain",
-    "publishDate": "2023-02-07T05:14:04.445Z",
-    "updatedDate": "2023-02-07T05:14:04.445Z",
+    "publishDate": "2023-02-07T05:49:04.643Z",
+    "updatedDate": "2023-02-07T05:49:04.643Z",
     "owner": {
-        "id": "63e1de1b0386ff84f0e1fb0f",
+        "id": "63e1e6503425cff7d990d987",
         "firstName": "Vinutha",
         "lastName": "Mahadev"
     }
 }
 {
-    "id": "63e1de1c0386ff6c06e1fb15"
+    "id": "63e1e6503425cf785290d98d"
 }
 {
     "error": "RESOURCE_NOT_FOUND"
 }
 {
-    "id": "63e1de1b0386ff84f0e1fb0f"
+    "id": "63e1e6503425cff7d990d987"
 }
 {
     "error": "RESOURCE_NOT_FOUND"
