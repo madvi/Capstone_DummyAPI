@@ -1,15 +1,17 @@
-import users.create.CreatePostRequestBody;
-import users.UsersService;
+package users.post;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import users.BlogService;
+import users.create.CreatePostRequestBody;
 
 
 public class CreateAndDeletePost {
-    UsersService usersService;
+    BlogService blogService;
 
     @BeforeClass
     public void beforeClass() {
-        usersService = new UsersService();
+        blogService = new BlogService();
     }
 
     @Test
@@ -19,10 +21,10 @@ public class CreateAndDeletePost {
         CreatePostRequestBody requestBody = new CreatePostRequestBody.Builder().build();
 
         //2.Act
-        String id = usersService.createPost(requestBody).getId();
+        String id = blogService.createPost(requestBody).getId();
 
         //3.Assert
-        usersService.deletePostByID(id).assertPostDelete(id);
+        blogService.deletePostByID(id).assertPostDelete(id);
 
     }
 }

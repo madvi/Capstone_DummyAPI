@@ -29,7 +29,7 @@ public class CreatePostRequestBody {
 
 
         public Builder() {
-            this.owner = "63be862670aabb0ba84cf7a3";
+            this.owner = "63be862670aabb0ba84cf7a3";//
             this.image = "https://i.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI";
             this.text = "A beauty of a mountain";
             this.tags = getList();
@@ -40,6 +40,11 @@ public class CreatePostRequestBody {
             tags.add("Clouds");
             tags.add("Sky");
             return tags;
+        }
+
+        public Builder owner(String owner){
+            this.owner = owner;
+            return this;
         }
         public CreatePostRequestBody build(){
             CreatePostRequestBody createPostRequestBody = new CreatePostRequestBody(this);

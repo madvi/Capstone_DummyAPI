@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="users.post.CreateAndGetPost" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-07T05:14:07" hostname="Vs-MacBook-Pro.local" time="1.072">
+  <properties/>
+  <testcase name="shouldCreatePostAndGetPostById" classname="users.post.CreateAndGetPost" time="1.072"/>
+  <system-out><![CDATA[{
+    "id": "63e1de200386ff2095e1fb33",
+    "image": "https://i.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI",
+    "likes": 0,
+    "link": "",
+    "tags": [
+        "Mountain",
+        "Clouds",
+        "Sky"
+    ],
+    "text": "A beauty of a mountain",
+    "publishDate": "2023-02-07T05:14:08.118Z",
+    "updatedDate": "2023-02-07T05:14:08.118Z",
+    "owner": {
+        "id": "63be862670aabb0ba84cf7a3",
+        "firstName": "Vinutha",
+        "lastName": "Mahadev"
+    }
+}
+{
+    "id": "63e1de200386ff2095e1fb33",
+    "image": "https://i.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI",
+    "likes": 0,
+    "link": "",
+    "tags": [
+        "Mountain",
+        "Clouds",
+        "Sky"
+    ],
+    "text": "A beauty of a mountain",
+    "publishDate": "2023-02-07T05:14:08.118Z",
+    "updatedDate": "2023-02-07T05:14:08.118Z",
+    "owner": {
+        "id": "63be862670aabb0ba84cf7a3",
+        "firstName": "Vinutha",
+        "lastName": "Mahadev"
+    }
+}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

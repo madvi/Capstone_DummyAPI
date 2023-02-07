@@ -1,5 +1,6 @@
 package users.create.response;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import users.create.CreatePostRequestBody;
 import lombok.Getter;
 import lombok.Setter;
@@ -16,7 +17,7 @@ public class CreatePostResponse {
 
     private String id;
     private String image;
-    private String likes;
+    private int likes;
     private String link;
     private String text;
     private String publishDate;

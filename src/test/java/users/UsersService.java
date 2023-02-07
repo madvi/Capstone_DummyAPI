@@ -2,10 +2,7 @@ package users;
 
 import users.create.CreatePostRequestBody;
 import users.create.CreateUserRequestBody;
-import users.create.response.CreatePostResponse;
-import users.create.response.CreateUserErrorResponse;
-import users.create.response.CreateUserResponse;
-import users.create.response.GetDeletedPostResponse;
+import users.create.response.*;
 import users.get.GetAllUserResponseByMyAccount;
 import users.get.GetAllUsers;
 import users.post.getPost.DeletePostResponse;
@@ -47,41 +44,24 @@ public class UsersService {
 
     }
 
-    public static CreatePostResponse createPost(CreatePostRequestBody body) {
-        Response response = new UserClient().postCreate(body);
-        CreatePostResponse createPostResponse = response.as(CreatePostResponse.class);
-        createPostResponse.setStatusCode(response.statusCode());
+    public DeleteUserResponse deleteUserByID(String id){
 
-        return createPostResponse;
-    }
-
-    public GetPostResponse getPostById(String id){
-
-        Response response = new UserClient().getPost(id);
+        Response response = new UserClient().deleteUser(id);
         int statusCode = response.statusCode();
-        GetPostResponse getPostResponse = response.as(GetPostResponse.class);
-        getPostResponse.setStatusCode(statusCode);
-
-        return getPostResponse;
+        DeleteUserResponse deleteUserResponse = response.as(DeleteUserResponse.class);
+        deleteUserResponse.setStatusCode(statusCode);
+        return deleteUserResponse;
     }
 
-    public DeletePostResponse deletePostByID(String id){
+    public GetDeleteUserResponse getDeletedUser(String id){
 
-        Response response = new UserClient().deletePost(id);
+        Response response = new UserClient().getDeleteUser(id);
         int statusCode = response.statusCode();
-        DeletePostResponse deletePostResponse = response.as(DeletePostResponse.class);
-        deletePostResponse.setStatusCode(statusCode);
+        GetDeleteUserResponse getDeleteUserResponse = response.as(GetDeleteUserResponse.class);
+        getDeleteUserResponse.setStatusCode(statusCode);
 
-        return deletePostResponse;
+        return getDeleteUserResponse;
     }
 
-    public GetDeletedPostResponse getDeletePost(String id){
 
-        Response response = new UserClient().getDelete(id);
-        int statusCode = response.statusCode();
-        GetDeletedPostResponse getDeletedPostResponse = response.as(GetDeletedPostResponse.class);
-        getDeletedPostResponse.setStatusCode(statusCode);
-
-        return getDeletedPostResponse;
-    }
 }

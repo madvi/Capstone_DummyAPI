@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="NegativeTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-07T05:14:01" hostname="Vs-MacBook-Pro.local" time="1.412">
+  <properties/>
+  <testcase name="shouldNotAllowToCreateUserWithUsedEmail" classname="NegativeTests" time="1.412"/>
+  <system-out><![CDATA[{
+    "id": "63e1de1a0386fff10de1fb09",
+    "firstName": "Vinutha",
+    "lastName": "Mahadev",
+    "email": "8dc92b50-9f78-45f4-8061-7a584be8a84f@gmail.com",
+    "registerDate": "2023-02-07T05:14:02.535Z",
+    "updatedDate": "2023-02-07T05:14:02.535Z"
+}
+{
+    "error": "BODY_NOT_VALID",
+    "data": {
+        "email": "Email already used"
+    }
+}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

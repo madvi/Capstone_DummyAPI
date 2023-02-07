@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="integrationTests.E2E_Tests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-07T05:14:03" hostname="Vs-MacBook-Pro.local" time="3.059">
+  <properties/>
+  <testcase name="endToEndTests" classname="integrationTests.E2E_Tests" time="3.059"/>
+  <system-out><![CDATA[{
+    "id": "63e1de1b0386ff84f0e1fb0f",
+    "firstName": "Vinutha",
+    "lastName": "Mahadev",
+    "email": "9f627ad2-3ab8-476c-ba4c-0e875a17c2a2@gmail.com",
+    "registerDate": "2023-02-07T05:14:03.943Z",
+    "updatedDate": "2023-02-07T05:14:03.943Z"
+}
+{
+    "id": "63e1de1c0386ff6c06e1fb15",
+    "image": "https://i.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI",
+    "likes": 0,
+    "link": "",
+    "tags": [
+        "Mountain",
+        "Clouds",
+        "Sky"
+    ],
+    "text": "A beauty of a mountain",
+    "publishDate": "2023-02-07T05:14:04.445Z",
+    "updatedDate": "2023-02-07T05:14:04.445Z",
+    "owner": {
+        "id": "63e1de1b0386ff84f0e1fb0f",
+        "firstName": "Vinutha",
+        "lastName": "Mahadev"
+    }
+}
+{
+    "id": "63e1de1c0386ff6c06e1fb15"
+}
+{
+    "error": "RESOURCE_NOT_FOUND"
+}
+{
+    "id": "63e1de1b0386ff84f0e1fb0f"
+}
+{
+    "error": "RESOURCE_NOT_FOUND"
+}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

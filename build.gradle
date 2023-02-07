@@ -1,5 +1,7 @@
 plugins {
     id 'java'
+    id 'application'
+    id 'io.qameta.allure' version '2.11.0'
 }
 
 group 'org.example'
@@ -18,8 +20,19 @@ dependencies {
     implementation group: 'org.projectlombok', name: 'lombok', version: '1.18.24'
     testAnnotationProcessor group: 'org.projectlombok', name: 'lombok', version: '1.18.24'
     //compile "org.slf4j:slf4j-simple:1.7.9"
+    // https://mvnrepository.com/artifact/io.qameta.allure/allure-testng
+    implementation group: 'io.qameta.allure', name: 'allure-testng', version: '2.20.1'
+    // https://mvnrepository.com/artifact/io.qameta.allure/allure-rest-assured
+    implementation group: 'io.qameta.allure', name: 'allure-rest-assured', version: '2.20.1'
+    implementation 'org.snakeyaml:snakeyaml-engine:2.4'
+
 }
 
 test {
     useTestNG()
+}
+java {
+    modularity.inferModulePath = true
+    toolchain { languageVersion.set(JavaLanguageVersion.of(11)) }
+
 }
